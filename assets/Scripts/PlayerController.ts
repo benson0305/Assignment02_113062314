@@ -155,10 +155,16 @@ export default class PlayerController extends cc.Component {
                 this.rb.linearVelocity = cc.v2(0, 400); 
             }
 
+            // 4. 等待 2 秒鐘 (讓馬力歐有時間掉出螢幕外)，再執行重生或結算
             setTimeout(() => {
                 if (this.life > 0) {
                     this.respawn();
                 } else {
+                    // 【新增】真正 Game Over 準備切換場景前，觸發分數上傳
+                    if (UIManager && UIManager.instance) {
+                        UIManager.instance.submitScore();
+                    }
+                    
                     cc.director.loadScene("GameOver");
                 }
             }, 2000);

@@ -74,4 +74,17 @@ export default class UIManager extends cc.Component {
             this.timer = 0; 
         }
     }
+
+    // 【新增】遊戲結束或通關時，呼叫此函數來上傳分數
+    public submitScore() {
+        let currentScore = this.score; 
+        if (currentScore > 0) {
+            let firebaseMgr = cc.find("FirebaseManager")?.getComponent("FirebaseManager");
+            if (firebaseMgr) {
+                // 完美！直接拿取登入時儲存的玩家名稱
+                let playerName = firebaseMgr.getCurrentPlayerName(); 
+                firebaseMgr.uploadScore(playerName, currentScore);
+            }
+        }
+    }
 }

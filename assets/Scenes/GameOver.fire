@@ -270,8 +270,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        17.607,
-        -73.361,
+        3.203,
+        -54.156,
         0,
         0,
         0,
@@ -374,8 +374,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        14.672,
-        -85.099,
+        0.268,
+        -65.894,
         0,
         0,
         0,
@@ -402,7 +402,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 7
     },
@@ -431,8 +431,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 140,
+      "height": 60
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -443,8 +443,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
-        0,
+        4,
+        -4,
         0,
         0,
         0,
@@ -471,7 +471,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 8
     },
@@ -486,15 +486,15 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
+      "r": 250,
+      "g": 243,
+      "b": 243,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 140,
+      "height": 60
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -506,7 +506,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        0,
+        -18,
         0,
         0,
         0,
@@ -547,11 +547,13 @@
     "_dstBlendFactor": 771,
     "_string": "TRY AGAIN",
     "_N$string": "TRY AGAIN",
-    "_fontSize": 20,
+    "_fontSize": 60,
     "_lineHeight": 40,
     "_enableWrapText": false,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "c247b211-2552-4477-9be0-219e3cc7f250"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
@@ -579,7 +581,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "f0048c10-f03e-4c97-b9d3-3506e1d58952"
+      "__uuid__": "2af94cc3-a5cd-48d5-9aa3-bc64e51009e9"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -606,10 +608,10 @@
     "alignMode": 0,
     "_target": null,
     "_alignFlags": 45,
-    "_left": 0,
-    "_right": 0,
-    "_top": 0,
-    "_bottom": 0,
+    "_left": -16,
+    "_right": -24,
+    "_top": -6,
+    "_bottom": -14,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
     "_isAbsLeft": true,
@@ -686,7 +688,7 @@
       "a": 200
     },
     "_N$normalSprite": {
-      "__uuid__": "f0048c10-f03e-4c97-b9d3-3506e1d58952"
+      "__uuid__": "2af94cc3-a5cd-48d5-9aa3-bc64e51009e9"
     },
     "_N$pressedSprite": {
       "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
@@ -715,7 +717,7 @@
     },
     "component": "",
     "_componentId": "f3faaVIg3hH1rFrPg9M3nf0",
-    "handler": "loadGameScene",
+    "handler": "loadStartScene",
     "customEventData": ""
   },
   {
@@ -732,6 +734,7 @@
     "clickAudio": {
       "__uuid__": "2324b23c-899c-494b-89dd-402f03810b22"
     },
+    "stageSelectPanel": null,
     "_id": "4bBNIXzehIk7CCVyhfuC2j"
   },
   {

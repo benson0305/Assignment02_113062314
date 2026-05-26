@@ -35,6 +35,11 @@ export default class GoalFlag extends cc.Component {
         // 3. 通知 UIManager 顯示通關面板
         if (UIManager.instance) {
             UIManager.instance.showLevelClear();
+            
+            // 【新增】通關時，延遲 0.5 秒跳出輸入框 (讓玩家先看到通關畫面再輸入)
+            setTimeout(() => {
+                UIManager.instance?.submitScore();
+            }, 500);
         }
     }
 }
